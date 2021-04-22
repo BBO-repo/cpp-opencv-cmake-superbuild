@@ -3,6 +3,7 @@ Automatically download, build and use OpenCV with OpenCV contrib for C++ applica
 
 # How to use
 clone the repo in your desired folder ex: cvdemo
+> git clone https://github.com/BBO-repo/cpp-opencv-cmake-superbuild.git cvdemo</br>
 > cd cvdemo
 
 run the cmake configuration to generate makefiles in the folder cvdemo/build 
