@@ -11,9 +11,9 @@ ExternalProject_Add(
     GIT_REPOSITORY https://github.com/opencv/opencv_contrib.git
     GIT_TAG 4.5.2
     PREFIX opencv-contrib
-    CONFIGURE_COMMAND cmake -E echo "Skipping configuring step."
-    BUILD_COMMAND cmake -E echo "Skipping building step."
-    INSTALL_COMMAND cmake -E echo "Skipping install step."
+    CONFIGURE_COMMAND ${CMAKE_COMMAND} -E echo "Skipping configuring step."
+    BUILD_COMMAND ${CMAKE_COMMAND} -E echo "Skipping building step."
+    INSTALL_COMMAND ${CMAKE_COMMAND} -E echo "Skipping install step."
     UPDATE_COMMAND ""	
 )
 set(OPENCV_CONTRIB_MODULE_PATH ${CMAKE_CURRENT_BINARY_DIR}/opencv-contrib/src/opencv-contrib/modules)
