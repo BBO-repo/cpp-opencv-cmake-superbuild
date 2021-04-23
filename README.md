@@ -1,5 +1,5 @@
 # cpp-opencv-cmake-superbuild
-Automatically download, build and use OpenCV with OpenCV contrib for C++ application using CMake
+Automatically download, build and use OpenCV with OpenCV contrib for C++ application using CMake.
 
 # How to use
 clone the repo in your desired folder ex: cvdemo
@@ -27,5 +27,5 @@ Or if using the previous cmake commands</br>
 > ...</br>
 > make -j12
 
-P.P.S: You may want to udpate OPENCV_LIBS with your additionnal required linked libs and as opencv build as dynamic library make sure te LD_LIBRARY_PATH is updated while running your exectable in the bin/ folder 
+P.P.S: You may want to udpate OPENCV_LIBS with your additionnal required linked libs and as opencv build as dynamic library. Also make sure the LD_LIBRARY_PATH is updated while running your exectable in the bin/ folder.
 
