@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.10)
 project(cvdemo)
 
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
@@ -9,7 +9,7 @@ include(ExternalProject)
 ExternalProject_Add(
     opencv-contrib
     GIT_REPOSITORY https://github.com/opencv/opencv_contrib.git
-    GIT_TAG 4.5.2
+    GIT_TAG 4.5.3
     PREFIX opencv-contrib
     CONFIGURE_COMMAND ${CMAKE_COMMAND} -E echo "Skipping configuring step."
     BUILD_COMMAND ${CMAKE_COMMAND} -E echo "Skipping building step."
@@ -21,7 +21,7 @@ set(OPENCV_CONTRIB_MODULE_PATH ${CMAKE_CURRENT_BINARY_DIR}/opencv-contrib/src/op
 ExternalProject_Add(
     opencv
     GIT_REPOSITORY https://github.com/opencv/opencv.git
-    GIT_TAG 4.5.2
+    GIT_TAG 4.5.3
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_SOURCE_DIR}/thirdparty/opencv
                -DBUILD_DOCS:BOOL=OFF
                -DBUILD_EXAMPLES:BOOL=OFF
